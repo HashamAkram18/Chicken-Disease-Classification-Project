@@ -21,7 +21,6 @@ list_of_files = [
     "params",
     "setup.py",
     "research/Trails.ipynb"
-    
 ]
 
 for filepath in list_of_files:
@@ -29,14 +28,16 @@ for filepath in list_of_files:
     filedir, filename = os.path.split(filepath)
 
     if filedir !="":
-        os.makedirs(filedir, exist_ok=True)
-        logging.info("Creating Directory: {filedir} for the file: {filename}")
+        try:
+            os.makedirs(filedir, exist_ok=True)
+        except OSError as e:
+            logging.error(f"Error creating directory {filedir}: {e}")
+        logging.info(f"Creating Directory: {filedir} for the file: {filename}")
     
     if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
         with open(filepath, "w") as f:
             pass
             logging.info(f"Creating empty file: {filepath}")
-
 
     else:
         logging.info(f"File already exists: {filepath}")        

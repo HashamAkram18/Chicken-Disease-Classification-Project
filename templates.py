@@ -18,9 +18,11 @@ list_of_files = [
     "config/config.yaml",
     "requirements.txt",
     "docker-compose.yml",
-    "params",
+    "dvc.yaml",
+    "params.yaml",
     "setup.py",
-    "research/Trails.ipynb"
+    "research/trails.ipynb",
+    "templates/index.html",
 ]
 
 for filepath in list_of_files:

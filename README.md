@@ -1,4 +1,4 @@
-# Chicken-Disease-Classification-Project
+# An End to End Deep Learning project using MLOPS tools such as DVC along with the deploymeny using Github Action in both Azure and AWS Cloud
 
 1. Update config.yaml
 2. Update secrets.yaml [Optional]

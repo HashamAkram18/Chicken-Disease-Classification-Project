@@ -11,7 +11,6 @@ class PrepareBaseModel:
         self.config = config
 
 
-    
     def get_base_model(self):
         self.model = tf.keras.applications.vgg16.VGG16(
             input_shape=self.config.params_image_size,
@@ -20,7 +19,6 @@ class PrepareBaseModel:
         )
 
         self.save_model(path=self.config.base_model_path, model=self.model)
-
 
     
     @staticmethod

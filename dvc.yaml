@@ -1,4 +1,4 @@
-
+# Writing to a file (DVC Command Line)
 
 stages:
   data_ingestion:
@@ -41,8 +41,6 @@ stages:
     outs:
       - artifacts/training/model.h5
 
-
-  
 
   evaluation:
     cmd: python src/CnnClassifier/pipeline/stage_04_evaluation.py

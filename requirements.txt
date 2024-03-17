@@ -1,4 +1,4 @@
-#tensorflow
+tensorflow
 pandas 
 dvc
 notebook
@@ -14,4 +14,4 @@ types-PyYAML
 scipy
 Flask
 Flask-Cors
--e .
+# -e .
